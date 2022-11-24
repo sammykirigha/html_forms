@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin: 30px 50px;
+      gap: 25px;
+      background-color: aliceblue;
+      border: 1px solid gray;
+      padding: 20px 50px;
+      width: 600px;
+      border-radius: 10px;
+    }
+
+    .section_one {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      gap: 35px;
+    }
+
+    .label {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .input {
+      width: 300px;
+      height: 30px;
+      padding: 4px 5px;
+      font-size: 14px;
+    }
+
+    .email {
+      margin-left: 10px !important;
+    }
+
+    .button {
+      background-color: rgb(0, 238, 255);
+      color: white;
+      width: fit-content;
+      padding: 10px 15px;
+      border: 0px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div>
+      <form id="" class="form" onsubmit="" action="">
+        <div class="section_one">
+          <div>
+            <label class="label">FirstName</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="input"
+              placeholder="Enter your firstname"
+            />
+          </div>
+        </div>
+
+        <div class="section_one">
+          <div>
+            <label class="label">LastName</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="input"
+              placeholder="Enter your lastname"
+            />
+          </div>
+        </div>
+
+        <div class="section_one">
+          <div>
+            <label class="label">Email</label>
+          </div>
+          <div style="margin-left: 20px">
+            <input
+              type="text"
+              class="input email"
+              placeholder="Enter your email"
+            />
+          </div>
+        </div>
+
+        <div class="section_one">
+          <div>
+            <label class="label" style="margin-left: -10px">Phone Num</label>
+          </div>
+          <div>
+            <input type="text" class="input" placeholder="Enter your phone" />
+          </div>
+        </div>
+
+        <button type="submit" class="button">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
